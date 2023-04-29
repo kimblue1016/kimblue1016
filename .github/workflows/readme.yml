@@ -14,12 +14,12 @@ jobs:
             - name: Use Node.js ${{ matrix.node-version }}
               uses: actions/setup-node@v2
               with:
-                  node-version: 14
+                  node-version: 16
             - run: npm install
 
             - name: Generate readme
               env:
-                  WEATHER_API_KEY: ${{ secrets.AIR_API_KEY }}
+                  AIR_API_KEY: ${{ secrets.AIR_API_KEY }}
               run: node build-svg.js
 
             - name: Commit changes
