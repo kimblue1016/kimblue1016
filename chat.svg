@@ -229,7 +229,7 @@
     <!-- Hi, I'm Sigrid Jin -->
     <g transform="translate(10, 0)" class="msg-1 bubble">
         <rect width="159" height="42" rx="18.0355" />
-        <text x="15" y="27">Hi, I'm Sigrid Jin</text>
+        <text x="15" y="27">Hi, I'm kimblue</text>
     </g>
 
     <!-- typing 2 -->
@@ -252,9 +252,9 @@
 
     <!-- From Columbus... -->
     <g transform="translate(10, 48)" class="msg-2">
-        <rect width="425" height="66.1302" rx="18.0355" class="bubble" />
-        <text x="15" y="27">I am from Seoul, Korea where it’s supposed to be</text>
-        <text x="15" y="50">61° F (16° C) and <tspan class="emoji">🌦</tspan> today.</text>
+        <rect width="395" height="66.1302" rx="18.0355" class="bubble" />
+        <text x="15" y="26">I am in Seoul.</text>
+        <text x="15" y="51">The air condition in Seoul is NORMAL today.</text>
     </g>
 
     <!-- typing 3 -->
@@ -277,9 +277,9 @@
 
     <!-- Work ... -->
     <g transform="translate(10, 120)" class="msg-3">
-        <rect width="459" height="66.1302" rx="18.0355" class="bubble" />
-        <text x="15" y="27">I’m eager to challenge new things!</text>
-        <text x="15" y="50">Now extensively learning ZK and LLM fields.</text>
+        <rect width="430" height="66.1302" rx="18.0355" class="bubble" />
+        <text x="15" y="26">I’m eager to challenge Lich King</text>
+        <text x="15" y="51">Now extensively learning Fire and Arcane Magic.</text>
     </g>
 
     <!-- typing 4 -->
@@ -300,12 +300,12 @@
 
     </g>
 
-    <!-- Twitter -->
+    <!-- instagram -->
     <g transform="translate(10, 192)" class="msg-4">
-        <rect width="415" height="42" rx="18.0355" class="bubble" />
+        <rect width="460" height="42" rx="18.0355" class="bubble" />
         <text x="15" y="27">
             Find me on
-            <a xlink:href="https://twitter.com/sigridjin_eth">https://twitter.com/sigridjin_eth</a>
+            <a xlink:href="https://www.instagram.com/kimblue1016">https://www.instagram.com/kimblue1016</a>
         </text>
     </g>
 
@@ -329,7 +329,7 @@
 
     <!-- Thanks -->
     <g transform="translate(10, 240)" class="msg-5">
-        <rect width="255" height="66.13" rx="18.0355" class="bubble" />
-        <text x="15" y="47">Have a great Saturday! <tspan class="emoji">👋</tspan></text>
+        <rect width="255" height="42" rx="18.0355" class="bubble" />
+        <text x="15" y="27">Have a great {todayDay}! <tspan class="emoji">👋</tspan></text>
     </g>
 </svg>
