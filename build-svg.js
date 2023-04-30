@@ -1,13 +1,14 @@
 let fs = require('fs')
 let https = require('https');
 
-const url = 'https://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty?returnType=json&numOfRows=100&pageNo=1&sidoName=%EC%84%9C%EC%9A%B8&ver=1.0&serviceKey=' + process.env.AIR_API_KEY
-https.get(url, (response) => {
+https.get('https://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty?returnType=json&numOfRows=100&pageNo=1&sidoName=%EC%84%9C%EC%9A%B8&ver=1.0&serviceKey=' + process.env.AIR_API_KEY, (response) => {
     let data = '';
 
     response.on('data', (chunk) => {
         data += chunk;
     });
+
+    console.log('data : '+data);
 
     response.on('end', () => {
         const parsedData = JSON.parse(data);
