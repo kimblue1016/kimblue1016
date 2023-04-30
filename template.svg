@@ -329,7 +329,7 @@
 
     <!-- Thanks -->
     <g transform="translate(10, 240)" class="msg-5">
-        <rect width="255" height="42" rx="18.0355" class="bubble" />
-        <text x="15" y="27">Have a great {todayDay}! <tspan class="emoji">👋</tspan></text>
+        <rect width="375" height="42" rx="18.0355" class="bubble" />
+        <text x="15" y="27">Have a great {today}! <tspan class="emoji">👋</tspan></text>
     </g>
 </svg>

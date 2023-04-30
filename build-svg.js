@@ -8,11 +8,11 @@ https.get('https://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getCtprvnRltmMes
         data += chunk;
     });
 
-    console.log('data : '+data);
-
     response.on('end', () => {
         const parsedData = JSON.parse(data);
         const filteredData = parsedData.response.body.items.filter(item => item.stationName === '강서구');
+
+        console.log('data : ' + JSON.stringify(filteredData));
 
         let grade = '';
         switch (filteredData[0].khaiGrade) {
@@ -40,6 +40,9 @@ https.get('https://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getCtprvnRltmMes
 
             data = data.replace('{name}', 'kimblue')
             data = data.replace('{grade}', grade)
+
+            let today = new Date();
+            data = data.replace('{today}', today);
 
             data = fs.writeFile('chat.svg', data, (err) => {
                 if (err) {
