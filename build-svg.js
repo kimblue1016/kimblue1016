@@ -1,6 +1,10 @@
 let fs = require('fs')
 let https = require('https');
 
+const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const today = new Date();
+const dayOfWeek = daysOfWeek[today.getDay()];
+
 https.get('https://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty?returnType=json&numOfRows=100&pageNo=1&sidoName=%EC%84%9C%EC%9A%B8&ver=1.0&serviceKey=qTq4ea2UK%2Bqfy4cZgDchTWor872C5crxBlh3SfFce0GcUKodgQwQEHg%2FS3yv1ICA5GbmEb%2BQ4eOMH%2F%2F24fn5kg%3D%3D', (response) => {
     let data = '';
 
@@ -41,8 +45,7 @@ https.get('https://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getCtprvnRltmMes
             data = data.replace('{name}', 'kimblue')
             data = data.replace('{grade}', grade)
 
-            let today = new Date();
-            data = data.replace('{today}', today);
+            data = data.replace('{today}', dayOfWeek);
 
             data = fs.writeFile('chat.svg', data, (err) => {
                 if (err) {
