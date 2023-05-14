@@ -44,7 +44,7 @@ https.get('https://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getCtprvnRltmMes
                 return
             }
 
-            data = data.replace('{name}', 'kimblue')
+            data = data.replace('{name}', 'Entwickler.')
             data = data.replace('{grade}', grade)
 
             data = data.replace('{today}', dayOfWeek);
