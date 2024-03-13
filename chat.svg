@@ -254,7 +254,7 @@
     <g transform="translate(10, 48)" class="msg-2">
         <rect width="395" height="66.1302" rx="18.0355" class="bubble" />
         <text x="15" y="26">I am in Seoul.</text>
-        <text x="15" y="51">The air condition in Seoul is GOOD today.</text>
+        <text x="15" y="51">The air condition in Seoul is NORMAL today.</text>
     </g>
 
     <!-- typing 3 -->
@@ -330,6 +330,6 @@
     <!-- Thanks -->
     <g transform="translate(10, 240)" class="msg-5">
         <rect width="240" height="42" rx="18.0355" class="bubble" />
-        <text x="15" y="27">Have a great Tuesday! <tspan class="emoji">👋</tspan></text>
+        <text x="15" y="27">Have a great Wednesday! <tspan class="emoji">👋</tspan></text>
     </g>
 </svg>
