@@ -254,7 +254,7 @@
     <g transform="translate(10, 48)" class="msg-2">
         <rect width="395" height="66.1302" rx="18.0355" class="bubble" />
         <text x="15" y="26">I am in Seoul.</text>
-        <text x="15" y="51">The air condition in Seoul is DANGER today.</text>
+        <text x="15" y="51">The air condition in Seoul is BAD today.</text>
     </g>
 
     <!-- typing 3 -->
